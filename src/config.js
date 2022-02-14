@@ -6,7 +6,7 @@ import Error from "./views/error";
 import Home from "./views/home";
 import Login from "./views/login";
 import Menu from "./views/menu";
-import Method from "./views/methods";
+import Method from "./views/method";
 import PrivacyPolicy from "./views/privacy";
 import Register from "./views/register";
 import Specials from "./views/specials";
