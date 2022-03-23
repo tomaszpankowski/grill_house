@@ -1,1 +1,99 @@
 @include aoa-bg-series($bg__init,$classes_init);
+
+.about{
+    &-s3{
+        background-color: #666!important;
+        background-blend-mode: multiply!important;
+    }
+}
+
+.menu{
+    &-s3{
+        background-color: #666!important;
+        background-blend-mode: multiply!important;
+    }
+}
+
+.method{
+    &-s2{
+        background-color: #666!important;
+        background-blend-mode: multiply!important; 
+    }
+}
+
+.method,.specials{
+    &-s4{
+        background-color: #666!important;
+        background-blend-mode: multiply!important; 
+    }
+}
+
+.specials{
+    &-s1{
+        background-position: center!important;
+    }
+    &-s4{
+        background-position: bottom!important;
+    }
+}
+
+.text{
+    &-shadow{
+        text-shadow: $text__shadow;
+    }
+}
+
+nav{
+    z-index: 10;
+}
+
+textarea{
+    resize: none;
+}
+
+@media all and (max-width: 767px){
+    .contact,.index,.menu{
+        &-s1{
+            *{
+                color: #fff !important;
+                text-shadow: $text__shadow;
+            }
+            background-color: #666!important;
+            background-blend-mode: multiply!important;
+        }
+    }
+    .method{
+        &-s1,&-s3{
+            *{
+                color: #fff !important;
+                text-shadow: $text__shadow;
+            }
+            background-color: #666!important;
+            background-blend-mode: multiply!important;
+        }
+    }
+    .navbar{
+        &-nav{
+            *{
+                &:hover{
+                    opacity: 0.8;
+                }
+                color: #fff !important;
+                text-shadow: $text__shadow;
+            }
+            background-color: #666!important;
+            background-blend-mode: multiply!important;
+            opacity:0.9;
+        }
+    }
+    .specials,.about{
+        &-s1,&-s2,&-s3{
+            *{
+                color: #fff !important;
+                text-shadow: $text__shadow;
+            }
+            background-color: #666!important;
+            background-blend-mode: multiply!important;
+        }
+    }
+}
