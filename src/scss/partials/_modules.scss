@@ -1,4 +1,37 @@
 @include aoa-bg-series($bg__init,$classes_init);
+@media all and (orientation:portrait){
+    .about{
+        &-s2{
+            background-position-x: center!important; 
+        }
+    }
+    .contact{
+        &-s1{
+            background-position-x: center!important; 
+        }
+    }
+    .index,.menu{
+        &-s1{
+            background-position-x: center!important; 
+        }
+    }
+    .method{
+        &-s1{
+            background-position-x: center!important; 
+        }
+        &-s3{
+            background-position-x: right!important; 
+        }
+    }
+    .specials{
+        &-s2{
+            background-position-x: center!important; 
+        }
+        &-s3{
+            background-position-x: right!important; 
+        }
+    }
+}
 
 .about{
     &-s3{
@@ -42,7 +75,10 @@
         text-shadow: $text__shadow;
     }
 }
-
+h1,h2,h3,h4,h5,h6,.nav-link{
+    font-family: "Marhey";
+    letter-spacing: 1px;
+}
 nav{
     z-index: 10;
 }
@@ -52,24 +88,34 @@ textarea{
 }
 
 @media all and (max-width: 767px){
-    .contact,.index,.menu{
+    .contact{
         &-s1{
-            *{
-                color: #fff !important;
-                text-shadow: $text__shadow;
-            }
             background-color: #666!important;
             background-blend-mode: multiply!important;
+            background-position-x: left!important;
+        }
+    }
+    .index{
+        &-s1{
+            background-color: #666!important;
+            background-blend-mode: multiply!important;
+            background-position-x: right!important;
+        }
+    }
+    .menu{
+        &-s1,&-s3{
+            background-color: #666!important;
+            background-blend-mode: multiply!important;
+            background-position-x: left!important;
         }
     }
     .method{
         &-s1,&-s3{
-            *{
-                color: #fff !important;
-                text-shadow: $text__shadow;
-            }
             background-color: #666!important;
             background-blend-mode: multiply!important;
+        }
+        &-s1{
+            background-position-x: right!important;
         }
     }
     .navbar{
@@ -88,12 +134,11 @@ textarea{
     }
     .specials,.about{
         &-s1,&-s2,&-s3{
-            *{
-                color: #fff !important;
-                text-shadow: $text__shadow;
-            }
             background-color: #666!important;
             background-blend-mode: multiply!important;
+        }
+        &-s3{
+            background-position-x: right!important;
         }
     }
 }

@@ -14,13 +14,13 @@ class LoginError extends Component {
             <Container fluid className={"login-s1 align-items-center p-0 py-5 bg-white d-flex minh-footer-adj " + this.props.classExt}>
                 <Row className="mx-auto text-center w-100">
                     <Col xs={10} md={6} className="mx-auto p-0 d-flex align-items-center">
-                        <Card className="mx-auto border border-secondary rounded bg-dark shadow text-secondary">
-                            <Card.Header className="text-secondary fw-bold text-start border-secondary">
+                        <Card className="mx-auto border border-dark rounded bg-warning shadow text-dark">
+                            <Card.Header className="text-dark fw-bold text-start border-dark">
                                 Login error!
                             </Card.Header>
-                            <Card.Body className="text-center text-secondary p-5">
+                            <Card.Body className="text-center text-dark p-5">
                                 <p className="lead">Incorrect login or password!</p>
-                                <Button variant={"outline-light border-secondary text-secondary"} onClick={this.hndBack.bind(this)}>
+                                <Button variant={"outline-dark"} onClick={this.hndBack.bind(this)}>
                                     OK
                                 </Button>
                             </Card.Body>
